@@ -6,21 +6,24 @@
 /*   By: mbentahi <mbentahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 18:23:51 by mbentahi          #+#    #+#             */
-/*   Updated: 2023/11/28 18:35:49 by mbentahi         ###   ########.fr       */
+/*   Updated: 2023/11/28 18:46:23 by mbentahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putnbr_base(int nbr)
+int	ft_putnbr_base(int nbr, char c)
 {
-	int		i;
-	long	nb;
+	int i;
+	long nb;
 	int counter;
 	char *base;
-	
+
 	counter = 0;
-	base = "013456789abcdef";
+	if (c == 'x')
+		base = "0123456789abcdef";
+	else
+		base = "0123456789ABCDEF";
 	nb = (long)nbr;
 	i = ft_strlen(base);
 	if (nb < 0)
@@ -30,8 +33,8 @@ int	ft_putnbr_base(int nbr)
 	}
 	if (nb >= i)
 	{
-		counter += ft_putnbr_base(nb / i);
-		counter += ft_putnbr_base(nb % i);
+		counter += ft_putnbr_base(nb / i, c);
+		counter += ft_putnbr_base(nb % i, c);
 	}
 	else
 		counter += ft_putchar(base[nb]);

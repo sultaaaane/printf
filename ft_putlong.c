@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putlong.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mbentahi <mbentahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/28 17:30:27 by mbentahi          #+#    #+#             */
-/*   Updated: 2023/11/28 17:36:52 by mbentahi         ###   ########.fr       */
+/*   Created: 2023/11/28 20:38:28 by mbentahi          #+#    #+#             */
+/*   Updated: 2023/11/28 20:47:07 by mbentahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putstr(char *s)
+int ft_putlong(unsigned long nb)
 {
-	return (write(1, s, ft_strlen(s)));
+	
 }
