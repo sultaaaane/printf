@@ -6,7 +6,7 @@
 /*   By: mbentahi <mbentahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 17:38:46 by mbentahi          #+#    #+#             */
-/*   Updated: 2023/11/28 17:44:33 by mbentahi         ###   ########.fr       */
+/*   Updated: 2023/11/30 18:33:47 by mbentahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_putnbr(int n)
 {
-	long nb;
-	int counter;
+	long	nb;
+	int		counter;
 
 	counter = 0;
 	nb = n;

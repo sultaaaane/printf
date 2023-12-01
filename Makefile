@@ -21,7 +21,8 @@ SRC	=		 ft_printadd.c    \
 			 ft_putnbr.c      \
 			 ft_putstr.c      \
 			 ft_strlen.c      \
-
+			 ft_putlong.c     \
+			 
 NAME = libftprintf.a
 
 all: header $(NAME)

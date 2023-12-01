@@ -6,7 +6,7 @@
 /*   By: mbentahi <mbentahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 17:30:27 by mbentahi          #+#    #+#             */
-/*   Updated: 2023/11/28 17:36:52 by mbentahi         ###   ########.fr       */
+/*   Updated: 2023/11/30 18:32:44 by mbentahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_putstr(char *s)
 {
+	if (!s)
+		return (write(1, "(null)", 6));
 	return (write(1, s, ft_strlen(s)));
 }
