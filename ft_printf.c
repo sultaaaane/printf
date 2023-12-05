@@ -6,7 +6,7 @@
 /*   By: mbentahi <mbentahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 16:42:39 by mbentahi          #+#    #+#             */
-/*   Updated: 2023/12/05 20:31:49 by mbentahi         ###   ########.fr       */
+/*   Updated: 2023/12/05 22:28:06 by mbentahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,11 +80,4 @@ void ft_sum(int **res)
 	
 	(*res) = (int *)malloc(4);
 	(*res)[0] = 4;
-}
-fff
-int main()
-{
-	int *res = 0;
-	ft_sum(&res);
-	printf("%d",*res);
 }
