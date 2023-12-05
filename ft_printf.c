@@ -6,7 +6,7 @@
 /*   By: mbentahi <mbentahi@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/26 16:42:39 by mbentahi          #+#    #+#             */
-/*   Updated: 2023/12/05 22:28:06 by mbentahi         ###   ########.fr       */
+/*   Updated: 2023/12/05 22:28:21 by mbentahi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,15 +69,4 @@ int	ft_printf(const char *str, ...)
 	}
 	va_end(varg);
 	return (counter);
-}
-#include <stdlib.h>
-
-void ft_sum(int **res)
-{
-	int a = 5;
-	int *aa = &a;
-	res = &aa;
-	
-	(*res) = (int *)malloc(4);
-	(*res)[0] = 4;
 }
